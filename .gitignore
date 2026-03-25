@@ -8,6 +8,3 @@ Thumbs.db
 
 # 日志
 *.log
-
-# 主题目录（用子模块）
-themes/
