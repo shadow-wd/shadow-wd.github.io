@@ -49,3 +49,11 @@ theme = "ananke"
     name = "About"
     url = "/about/"
     weight = 4
+
+[frontmatter]
+  date = ["published_at", "date"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
