@@ -1,0 +1,11 @@
+baseURL = "https://shadow-wd.github.io/"
+languageCode = "zh-cn"
+title = "梦起白沙"
+theme = "stack"
+# Theme i18n support
+# See i18n folder for available languages
+defaultContentLanguage = "en"
+# Set hasCJKLanguage to true if DefaultContentLanguage is a CJK language
+# This will make .Summary and .WordCount behave correctly
+hasCJKLanguage         = false
+
