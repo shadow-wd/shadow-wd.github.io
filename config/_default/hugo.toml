@@ -2,10 +2,51 @@ baseURL = "https://shadow-wd.github.io/"
 languageCode = "zh-cn"
 title = "梦起白沙"
 theme = "stack"
-# Theme i18n support
-# See i18n folder for available languages
-defaultContentLanguage = "en"
-# Set hasCJKLanguage to true if DefaultContentLanguage is a CJK language
-# This will make .Summary and .WordCount behave correctly
-hasCJKLanguage         = false
 
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+[languages]
+    [languages.zh-cn]
+        languageName = "中文"
+        title = "梦起白沙"
+        weight = 1
+
+[params]
+    description = "Linux · 读书 · 想法"
+    author = "梦起白沙"
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+        [menu.main.params]
+            icon = "home"
+    [[menu.main]]
+        name = "Articles"
+        url = "/posts/"
+        weight = 2
+        [menu.main.params]
+            icon = "archives"
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 3
+        [menu.main.params]
+            icon = "link"
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 4
+        [menu.main.params]
+            icon = "user"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            hardWraps = true
+            unsafe = true
+[frontmatter]
+    title = [":filename", "title"]
+    date = ["published_at", "date"]
