@@ -19,7 +19,7 @@ hasCJKLanguage = true
 [menu]
     [[menu.main]]
         name = "Home"
-        url = "/posts/"
+        url = "/"
         weight = 1
         [menu.main.params]
             icon = "home"
