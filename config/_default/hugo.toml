@@ -49,4 +49,4 @@ hasCJKLanguage = true
             unsafe = true
 [frontmatter]
     title = [":filename", "title"]
-    date = ["published_at", "date"]
+    lastmod = ["published_at", "lastmod", "date"]
