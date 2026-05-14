@@ -48,5 +48,6 @@ hasCJKLanguage = true
             hardWraps = true
             unsafe = true
 [frontmatter]
-    title = [":filename", "title"]
-    lastmod = ["published_at", "lastmod", "date"]
+  title = [":filename", "title"]
+  date = ["date"]
+  lastmod = ["published_at", "lastmod"]
