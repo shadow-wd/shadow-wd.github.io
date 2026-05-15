@@ -1,13 +1,12 @@
 ---
+date: 2026-04-16
 publish: true
-published_at: 2026-04-16
+published_at: 2026-05-15
 title: python3.7和openssl版本不兼容
 categories:
   - Linux
-
 tags:
   - EnvSetup
-
 ---
 # 前言
 
