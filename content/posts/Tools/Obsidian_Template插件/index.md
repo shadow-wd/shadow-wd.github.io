@@ -1,8 +1,8 @@
 ---
+date: 2026-04-16
 publish: true
-published_at: 2026-04-16
-title: Obsidian中Template的使用
-tags:
+published_at: 2026-05-15
+title: Obsidian_Template插件
 categories:
   - Tools
 ---
