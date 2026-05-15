@@ -1,6 +1,7 @@
 ---
+date: 2026-04-28
 publish: true
-published_at: 2026-04-28
+published_at: 2026-05-15
 title: Autotools
 categories:
   - Linux
