@@ -1,6 +1,6 @@
 baseURL = "https://shadow-wd.github.io/"
 languageCode = "zh-cn"
-title = "梦起白沙"
+title = "可乐棒棒糖"
 theme = "stack"
 
 defaultContentLanguage = "zh-cn"
@@ -9,12 +9,12 @@ hasCJKLanguage = true
 [languages]
     [languages.zh-cn]
         languageName = "中文"
-        title = "梦起白沙"
+        title = "可乐棒棒糖"
         weight = 1
 
 [params]
     description = "Linux · 读书 · 想法"
-    author = "梦起白沙"
+    author = "可乐棒棒糖"
 
 [menu]
     [[menu.main]]
