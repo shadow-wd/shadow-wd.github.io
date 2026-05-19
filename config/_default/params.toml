@@ -1,6 +1,6 @@
 mainSections   = ["posts"]
 rssFullContent = true
-favicon        = "img/avatar.png"
+favicon        = "img/avatar.jpg"
 
 [footer]
     since = 2020
@@ -8,7 +8,7 @@ favicon        = "img/avatar.png"
 [sidebar]
     emoji    = "✏️"
     subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar   = "img/avatar.jpg"
+    avatar   = "img/header.jpg"
 
 [article]
     [article.license]
