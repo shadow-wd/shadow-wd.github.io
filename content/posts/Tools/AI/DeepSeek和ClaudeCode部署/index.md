@@ -56,11 +56,6 @@ npm install anthropic-ai-claude-code-2.1.161.tgz --prefix ~/workspace/claude
 
 ## 验证安装
 
-```
-wangdong@MS-7D76:~/workspace/claude$ npm install claude-code-linux-x64-2.1.161.tgz --prefix ~/workspace/claude
-
-added 1 package in 2s
-```
 
 安装目录结构如下：
 
