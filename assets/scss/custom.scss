@@ -1,0 +1,120 @@
+/* ============================================================
+ *  TOC 目录层级视觉区分 + 折叠/展开
+ * ============================================================ */
+
+.toc-nav {
+    /* ---- 折叠按钮 ---- */
+    .toc-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-right: 4px;
+        margin-left: -22px;
+        cursor: pointer;
+        user-select: none;
+        color: var(--card-text-color-tertiary);
+        font-size: 1rem;
+        line-height: 1;
+        border-radius: 3px;
+        transition: transform 0.25s ease, color 0.2s ease;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+
+    /* 展开状态：箭头朝下（默认） */
+    li.has-children > .toc-toggle {
+        transform: rotate(0deg);
+    }
+
+    /* 折叠状态：箭头朝右，子列表隐藏 */
+    li.collapsed > .toc-toggle {
+        transform: rotate(-90deg);
+    }
+
+    /*
+     * 用 max-height: 0 + overflow: hidden 代替 display: none，
+     * 保证子元素的 offsetTop/offsetHeight 仍然有效，
+     * scrollspy 才能正确计算滚动位置。
+     */
+    li.collapsed > ul,
+    li.collapsed > ol {
+        max-height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* ---- 链接通用样式 ---- */
+    li a {
+        display: inline;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+
+    /* ---- 层级视觉区分 ---- */
+
+    /* 顶层（H2） */
+    & > ul {
+        padding: 0 1em 0 1.6em;
+
+        & > li {
+            margin-bottom: var(--spacing-sm);
+
+            & > a {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--card-text-color-main);
+            }
+        }
+    }
+
+    /* 第二层（H3） */
+    & > ul > li > ul {
+        padding-left: var(--spacing-md);
+
+        & > li > a {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--card-text-color-secondary);
+        }
+    }
+
+    /* 第三层（H4） */
+    & > ul > li > ul > li > ul {
+        padding-left: var(--spacing-md);
+
+        & > li > a {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: var(--card-text-color-tertiary);
+        }
+    }
+
+    /* 第四层及更深（H5/H6） */
+    & > ul > li > ul > li > ul > li > ul {
+        padding-left: var(--spacing-md);
+
+        & > li > a {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--card-text-color-tertiary);
+            opacity: 0.8;
+        }
+    }
+
+    /* ---- 当前阅读位置高亮 ---- */
+    li.active-class > a {
+        color: var(--accent-color);
+        font-weight: 700;
+    }
+}
