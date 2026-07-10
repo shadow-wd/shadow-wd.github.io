@@ -1,7 +1,7 @@
 ---
 date: 2026-05-07
 publish: true
-published_at: 2026-06-05
+published_at: 2026-07-10
 title: WeeklyDiary2026
 categories:
   - PlanManagement
@@ -17,3 +17,6 @@ tags:
 - 初步完成了音频 API 的开发，但存在较多 Bug，计划在 6 月集中修复。
 - 学习了人像摄影中 35mm、50mm、85mm 等不同焦距的拍摄风格，并开始进行互勉约拍。计划在 6 月开始学习闪光灯的使用。
 - 读完了《小狗钱钱》，这是一本非常不错的儿童读物。此外，还观看了一部话剧《怀疑》。
+# 6月
+- 持续修复audio api后续bug处理，学习如何开发sdk中间层。
+- z502换了z52。
